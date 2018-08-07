@@ -7,7 +7,7 @@
 The Installation Is Easy,You Just Follow This Command
 
       $ git clone https://gitlab.com/cscs/Bibata_AdaptaBreath.git
-      $ cd Bibata_Cursor/
+      $ cd Bibata_AdaptaBreath/
       $ chmod +x build.sh
       $ ./build.sh
       $ chmod +x ./Installer_Bibata.sh
