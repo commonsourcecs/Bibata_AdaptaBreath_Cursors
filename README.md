@@ -1,17 +1,12 @@
-# Bibata_Cursor
-###### Material Based Cursor
+# Bibata_AdaptaBreath_Cursor
+###### Bibata Based Cursor Made for AdaptaBreath and Manjaro
 
-![Bibata Wallpaper](https://github.com/KaizIqbal/Bibata_Cursor/blob/master/image/Bibata_wall.png)
-# Flavours
-
-###### Now Bibata Cursor Is Available In Three Color Light,Dark,and Amber.
-
-![Bibata Flavours](https://github.com/KaizIqbal/Bibata_Cursor/blob/master/image/All_Cursor.png)
+![BibataAdaptaBreath Example](https://gitlab.com/cscs/Bibata_AdaptaBreath/raw/master/image/All_Cursor.png)
 
 # Installation
 The Installation Is Easy,You Just Follow This Command
 
-      $ git clone https://github.com/KaizIqbal/Bibata_Cursor.git
+      $ git clone https://gitlab.com/cscs/Bibata_AdaptaBreath.git
       $ cd Bibata_Cursor/
       $ chmod +x build.sh
       $ ./build.sh
