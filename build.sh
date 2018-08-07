@@ -7,6 +7,7 @@ RAWSVGS_Bibata="src/Bibata_AdaptaBreath/svgs"
 INDEX_Bibata="src/Bibata_AdaptaBreath/cursor.theme"
 INDEX1_Bibata="src/Bibata_AdaptaBreath/index.theme"
 
+
 ALIASES="src/cursorList"
 
 
@@ -45,6 +46,7 @@ OUTPUT_Bibata=${OUTPUT_Bibata// /_}
 
 mkdir -p "$DIR11X_Bibata" "$DIR10X_Bibata" "$DIR9X_Bibata" "$DIR8X_Bibata" "$DIR7X_Bibata" "$DIR6X_Bibata" "$DIR5X_Bibata" "$DIR4X_Bibata" "$DIR3X_Bibata" "$DIR2X_Bibata" "$DIR1X_Bibata"
 
+
 mkdir -p "$OUTPUT_Bibata/cursors"
 echo 'Making Folders... DONE';
 
@@ -71,6 +73,7 @@ for CUR in src/config/*.cursor; do
 
 done
     echo -e "\033[0KGenerating simple cursor pixmaps OF Bibata AdaptaBreath... DONE"
+    
 
     echo -ne "\033[0KGenerating Animated Cursor Bibata AdaptaBreath... \\r"
 for i in 01 02 03 04 05 06 07 08 09 10 11 12 13 14 15 16 17 18 19 20 21 22 23 24 25 26 27 28 29 30 31 32 33 34 35 36 37 38 39 40 41 42 43 44 45
@@ -90,7 +93,29 @@ do
     inkscape -w 96 -h 96 --without-gui -f $RAWSVGS_Bibata/progress-$i.svg -e "$DIR11X_Bibata/progress-$i.png" > /dev/null
 
 done
-    
+    echo -e "\033[0KGenerating animated cursor pixmaps For Bibata AdaptaBreath Process... DONE"
+
+for i in 01 02 03 04 05 06 07 08 09 10 11 12 13 14 15 16 17 18 19 20 21 22 23 24 25 26 27 28 29 30 31 32 33 34 35 36 37 38 39 40 41 42 43 44 45
+do
+    echo -ne "\033[0KGenerating animated cursor pixmaps For Bibata AdaptaBreath Wait... $i / 45 \\r"
+
+    inkscape -w 24 -h 24 --without-gui -f $RAWSVGS_Bibata/wait-$i.svg -e "$DIR1X_Bibata/wait-$i.png" > /dev/null
+    inkscape -w 28 -h 28 --without-gui -f $RAWSVGS_Bibata/wait-$i.svg -e "$DIR2X_Bibata/wait-$i.png" > /dev/null
+    inkscape -w 32 -h 32 --without-gui -f $RAWSVGS_Bibata/wait-$i.svg -e "$DIR3X_Bibata/wait-$i.png" > /dev/null
+    inkscape -w 40 -h 40 --without-gui -f $RAWSVGS_Bibata/wait-$i.svg -e "$DIR4X_Bibata/wait-$i.png" > /dev/null
+    inkscape -w 48 -h 48 --without-gui -f $RAWSVGS_Bibata/wait-$i.svg -e "$DIR5X_Bibata/wait-$i.png" > /dev/null
+    inkscape -w 56 -h 56 --without-gui -f $RAWSVGS_Bibata/wait-$i.svg -e "$DIR6X_Bibata/wait-$i.png" > /dev/null
+    inkscape -w 64 -h 64 --without-gui -f $RAWSVGS_Bibata/wait-$i.svg -e "$DIR7X_Bibata/wait-$i.png" > /dev/null
+    inkscape -w 72 -h 72 --without-gui -f $RAWSVGS_Bibata/wait-$i.svg -e "$DIR8X_Bibata/wait-$i.png" > /dev/null
+    inkscape -w 80 -h 80 --without-gui -f $RAWSVGS_Bibata/wait-$i.svg -e "$DIR9X_Bibata/wait-$i.png" > /dev/null
+    inkscape -w 88 -h 88 --without-gui -f $RAWSVGS_Bibata/wait-$i.svg -e "$DIR10X_Bibata/wait-$i.png" > /dev/null
+    inkscape -w 96 -h 96 --without-gui -f $RAWSVGS_Bibata/wait-$i.svg -e "$DIR11X_Bibata/wait-$i.png" > /dev/null
+
+done
+    echo -e "\033[0KGenerating animated cursor pixmaps For Bibata AdaptaBreath Wait... DONE"
+    echo -ne "\033[0KGenerating Animated Cursor Bibata AdaptaBreath... DONE \\r"
+
+
 echo -ne "Generating cursor theme...\\r"
 for CUR in src/config/*.cursor; do
     BASENAME=$CUR
@@ -116,6 +141,7 @@ while read -r ALIAS ; do
         continue
     fi
     ln -s "$TO" "$OUTPUT_Bibata/cursors/$FROM"
+
 
 done < $ALIASES
 echo -e "\033[0KGenerating shortcuts... DONE"
