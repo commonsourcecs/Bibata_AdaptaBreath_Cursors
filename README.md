@@ -14,12 +14,13 @@ The Installation Is Easy,You Just Follow This Command
       $ sudo ./Installer_Bibata.sh  
 
 # Build
-## Build Dependancy
-### Inkscape
-### xcursorgen
+### Build Dependencies
+##### Inkscape
+##### xcursorgen
 
-###### How I Contribute The Bibata Project
-In The ['src'](https://github.com/KaizIqbal/Bibata_Cursor/tree/master/src) Directory you see all the Source File.It Also Contain One Directory Called ['svgs'](https://github.com/KaizIqbal/Bibata_Cursor/tree/master/src/Bibata_Oil/svgs) That Contain All .svg File Edit It Using Inkscape or another Tool you Used,And Contribute The Project
-
+### How I Contribute The Bibata Project
+In The ['src'](https://gitlab.com/cscs/Bibata_AdaptaBreath/tree/master/src) Directory you see all the Source File.It Also Contain One Directory Called ['svgs'](https://github.com/KaizIqbal/Bibata_Cursor/tree/master/src/Bibata_Oil/svgs) That Contain All .svg File Edit It Using Inkscape or another Tool you Used,And Contribute The Project
 
 ENJOY.
+
+Forked from original work by ['KaizIqbal'](https://github.com/KaizIqbal/Bibata_Cursor).
